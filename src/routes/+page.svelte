@@ -1,11 +1,27 @@
 <script>
-	const dailyContent = 'Course Content';
+	// import the MessageBox component
+	import MessageBox from '../lib/components/MessageBox.svelte';
+
+	// render html with @html in the rendered variable { ... }
+	const dailyContent = '<span class="text-blue-500">Course Content</span>';
 	const description =
 		'This is a course about svelte. we learn how to make modern and cool websites with it.';
+
+	// pass this into a component:
+	const messageForTheBox = {
+		title: 'this is from an object',
+		description:
+			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, temporibus. Delectus deserunt soluta, ratione unde dignissimos voluptatem provident pariatur. Eum quod accusantium molestias rerum quidem porro, pariatur fuga id officiis?'
+	};
 </script>
 
-<h1 class="text-5xl">SAIT Svelte {dailyContent}</h1>
+<h1 class="text-5xl">SAIT Svelte {@html dailyContent}</h1>
 <p>{description}</p>
+
+<!-- Render the MessageBox Component -->
+<MessageBox title="Whatever" description="a bunch of text" />
+<MessageBox title={messageForTheBox.title} description={messageForTheBox.description} />
+<MessageBox {...messageForTheBox} />
 
 <p>
 	Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque deserunt aut consequatur
