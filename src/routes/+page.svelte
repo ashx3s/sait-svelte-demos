@@ -1,5 +1,6 @@
 <script>
 	// import the MessageBox component
+	import MessageBox from '../lib/components/MessageBox.svelte';
 
 	// render html with @html in the rendered variable { ... }
 	const dailyContent = '<span class="text-blue-500">Course Content</span>';
@@ -11,7 +12,9 @@
 <p>{description}</p>
 
 <!-- Render the MessageBox Component -->
-
+<MessageBox title="Whatever" description="a bunch of text" />
+<MessageBox />
+<MessageBox />
 <p>
 	Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque deserunt aut consequatur
 	necessitatibus laboriosam animi dolorem unde minima ut?
