@@ -6,3 +6,8 @@
 
 <h1>SAIT Svelte {dailyContent}</h1>
 <p>{description}</p>
+
+<p>
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque deserunt aut consequatur
+	necessitatibus laboriosam animi dolorem unde minima ut?
+</p>
