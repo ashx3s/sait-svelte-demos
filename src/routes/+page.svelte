@@ -4,7 +4,7 @@
 		'This is a course about svelte. we learn how to make modern and cool websites with it.';
 </script>
 
-<h1>SAIT Svelte {dailyContent}</h1>
+<h1 class="text-5xl">SAIT Svelte {dailyContent}</h1>
 <p>{description}</p>
 
 <p>
