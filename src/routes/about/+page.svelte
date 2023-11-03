@@ -1,6 +1,6 @@
 <script>
 	import ListItem from '../../lib/components/ListItem.svelte';
-	let listItems = ['Dog', 'Cat', 'Crow ', 'Ferret'];
+	let listItems = ['car', 'bike', 'scooter ', 'imperial star destroyer'];
 	let secondList = [
 		{ name: 'Alfred', species: 'Dog', href: '/' },
 		{ name: 'Elvira', species: 'Cat', href: '/' },
@@ -17,7 +17,7 @@
 	<h2 class="text-3xl">Our Example List</h2>
 	<ul class="list-disc ml-8">
 		{#each listItems as item}
-			<ListItem>{item}</ListItem>
+			<ListItem bgColor="bg-red-200">{item}</ListItem>
 		{/each}
 	</ul>
 </section>
@@ -26,7 +26,7 @@
 	<h2 class="text-3xl">Animals</h2>
 	<ul>
 		{#each secondList as { href, name, species }}
-			<ListItem><a {href}>{name} is a {species}</a></ListItem>
+			<ListItem bgColor="bg-blue-200"><a {href}>{name} is a {species}</a></ListItem>
 		{/each}
 	</ul>
 </section>
