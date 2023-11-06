@@ -1,4 +1,5 @@
 <script>
+	import PageHeader from '../../lib/components/PageHeader.svelte';
 	import ListItem from '../../lib/components/ListItem.svelte';
 	let listItems = ['car', 'bike', 'scooter ', 'imperial star destroyer'];
 	let secondList = [
@@ -7,11 +8,14 @@
 		{ name: 'Sally', species: 'Crow', href: '/' },
 		{ name: 'Gus', species: 'Ferret', href: '/' }
 	];
+	const headerInfo = {
+		title: 'About Page',
+		description: '',
+		bgColor: 'bg-yellow-500'
+	};
 </script>
 
-<header class="my-4 text-center text-5xl">
-	<h1>About Page</h1>
-</header>
+<PageHeader {...headerInfo} />
 
 <section>
 	<h2 class="text-3xl">Our Example List</h2>
