@@ -1,5 +1,5 @@
 <script>
-	// import the MessageBox component
+	import PageHeader from '../lib/components/PageHeader.svelte';
 	import MessageBox from '../lib/components/MessageBox.svelte';
 
 	// render html with @html in the rendered variable { ... }
@@ -19,8 +19,11 @@
 	];
 </script>
 
+<!-- TODO: Manage this syntax by Nov 8
 <h1 class="text-5xl">SAIT Svelte {@html dailyContent}</h1>
 <p>{description}</p>
+  -->
+<PageHeader pageDescription={description} pageTitle="Home Page" />
 
 <!-- Render the MessageBox Component -->
 {#each messagesForTheBox as box}
