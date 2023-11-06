@@ -1,3 +1,5 @@
-<header>
-	<h1>Blog Page</h1>
-</header>
+<script>
+	import PageHeader from '../../lib/components/PageHeader.svelte';
+</script>
+
+<PageHeader />
