@@ -23,7 +23,7 @@
 <h1 class="text-5xl">SAIT Svelte {@html dailyContent}</h1>
 <p>{description}</p>
   -->
-<PageHeader pageDescription={description} pageTitle="Home Page" />
+<PageHeader pageDescription={description} pageTitle="Home Page" bgColor="bg-red-500" />
 
 <!-- Render the MessageBox Component -->
 {#each messagesForTheBox as box}

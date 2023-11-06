@@ -2,10 +2,11 @@
 	export let pageTitle = 'Placeholder Title';
 	export let pageDescription =
 		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, dolore.';
+	export let bgColor = 'bg-gray-200';
 </script>
 
 <!-- Header -->
-<header class="bg-blue-600 text-white py-12 flex flex-col items-center">
+<header class="{bgColor} mb-4 lg:mb-8 text-white py-12 flex flex-col items-center">
 	<!-- Title -->
 	<h1 class="text-3xl lg:text-5xl font-semibold">{pageTitle}</h1>
 	<!-- Description -->

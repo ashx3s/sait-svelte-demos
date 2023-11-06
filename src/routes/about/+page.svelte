@@ -1,4 +1,5 @@
 <script>
+	import PageHeader from '../../lib/components/PageHeader.svelte';
 	import ListItem from '../../lib/components/ListItem.svelte';
 	let listItems = ['car', 'bike', 'scooter ', 'imperial star destroyer'];
 	let secondList = [
@@ -9,9 +10,7 @@
 	];
 </script>
 
-<header class="my-4 text-center text-5xl">
-	<h1>About Page</h1>
-</header>
+<PageHeader pageTitle="About Page" pageDescription="" bgColor="bg-yellow-500" />
 
 <section>
 	<h2 class="text-3xl">Our Example List</h2>
