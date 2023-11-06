@@ -10,7 +10,7 @@
 	const name = 'ash';
 </script>
 
-<PageHeader {...headerInfo} />
+<PageHeader {...headerInfo} flexContent>This is for the flex content box</PageHeader>
 
 {#if name === 'Godfrey'}
 	<p>Stop trying to hack my system Godfrey</p>
@@ -19,16 +19,3 @@
 {:else}
 	<p>Hello {name}</p>
 {/if}
-
-<!-- 
-if (input === "Ash") {
-    console.log("hello")
-    return "hello";
-  } else if (input === "Godfrey") {
-    console.log("Stop trying to log into my syste Godfrey");
-    return "stop hacking Godfrey";
-  } else {
-    console.log("signed out");
-    return "signed out";
-  }
- -->

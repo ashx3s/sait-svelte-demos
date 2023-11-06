@@ -15,7 +15,12 @@
 	};
 </script>
 
-<PageHeader {...headerInfo} />
+<PageHeader {...headerInfo}>
+	<h3 slot="info">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad et non voluptatem distinctio
+		expedita. Quaerat distinctio quam expedita. Quae.
+	</h3>
+</PageHeader>
 
 <section>
 	<h2 class="text-3xl">Our Example List</h2>

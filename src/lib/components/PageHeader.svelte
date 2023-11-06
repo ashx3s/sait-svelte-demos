@@ -10,9 +10,15 @@
 	<h1 class="text-3xl lg:text-5xl font-semibold">{title}</h1>
 	<!-- Description -->
 	<p class="text-lg lg:text-xl text-center max-w-sm mt-2">{description}</p>
-	<!-- Slot for flex content
-	<div class="bg-white text-blue-600 rounded-lg p-4">
-		<slot />
-	</div>
-  -->
+	{#if $$slots.info}
+		<div class="bg-white text-blue-600 rounded-lg p-4">
+			<slot name="info" />
+		</div>
+	{/if}
+	<!--if buttons are needed, make space for them, implement on page  -->
+	{#if $$slots.actions}
+		<div class="bg-black p-4">
+			<slot name="actions" />
+		</div>
+	{/if}
 </header>
