@@ -8,9 +8,14 @@
 		{ name: 'Sally', species: 'Crow', href: '/' },
 		{ name: 'Gus', species: 'Ferret', href: '/' }
 	];
+	const headerInfo = {
+		title: 'About Page',
+		description: '',
+		bgColor: 'bg-yellow-500'
+	};
 </script>
 
-<PageHeader pageTitle="About Page" pageDescription="" bgColor="bg-yellow-500" />
+<PageHeader {...headerInfo} />
 
 <section>
 	<h2 class="text-3xl">Our Example List</h2>

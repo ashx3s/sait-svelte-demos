@@ -17,13 +17,18 @@
 				'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, temporibus. Delectus deserunt soluta, ratione unde dignissimos voluptatem provident pariatur. Eum quod accusantium molestias rerum quidem porro, pariatur fuga id officiis?'
 		}
 	];
+	const headerInfo = {
+		title: 'Home Page',
+		description: description,
+		bgColor: 'bg-red-500'
+	};
 </script>
 
 <!-- TODO: Manage this syntax by Nov 8
 <h1 class="text-5xl">SAIT Svelte {@html dailyContent}</h1>
 <p>{description}</p>
   -->
-<PageHeader pageDescription={description} pageTitle="Home Page" bgColor="bg-red-500" />
+<PageHeader {...headerInfo} />
 
 <!-- Render the MessageBox Component -->
 {#each messagesForTheBox as box}
