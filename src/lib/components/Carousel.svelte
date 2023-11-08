@@ -1,5 +1,5 @@
 <script>
-	import Button from '../../lib/components/Button.svelte';
+	import Button from '$lib/components/Button.svelte';
 	// slide array to loop through
 	const slideArr = ['dog', 'cat', 'crow', 'ferret', 'iguana'];
 
@@ -38,7 +38,7 @@
 <section class="px-4">
 	<h2 class="text-2xl font-semibold">{currentSlideIndex}: {currentSlideContent}</h2>
 	<div class="mt-2">
-		<Button text="previous" on:toggle={prevSlide} />
+		<Button text="previous" color="orange" on:toggle={prevSlide} />
 		<Button text="next" on:toggle={nextSlide} />
 	</div>
 </section>
